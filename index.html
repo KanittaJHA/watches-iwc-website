@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <!--=============== FAVICON ===============-->
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
 
@@ -14,24 +13,27 @@
     />
 
     <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+
+    <!--=============== GSAP ===============-->
+    <script src="js/gsap.min.js" defer></script>
+
+    <!--=============== SWIPER ===============-->
+    <script src="js/swiper-bundle.min.js" defer></script>
+
+    <!--=============== MAIN SCRIPT ===============-->
+    <script src="js/main.js" defer></script>
 
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="css/style.css" />
 
-    <!--=============== GSAP ===============-->
-
-    <!--=============== SWIPER JS ===============-->
-
-    <!--=============== MAIN JS ===============-->
-    <script src="js/main.js" defer></script>
-
-    <title>Watches</title>
+    <title>Watches-IWC</title>
   </head>
   <body>
     <!--==================== HEADER ====================-->
     <header class="header" id="header">
       <nav class="nav container">
-        <img src="images/logo.webp" alt="iwc-logo" class="nav-logo" />
+        <img src="images/logo.webp" class="nav__logo" alt="iwc-logo" />
 
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list">
@@ -54,21 +56,21 @@
 
           <div class="nav__social">
             <a
-              href="https://www.facebook.com"
+              href="https://www.facebook.com/"
               target="_blank"
               class="nav__social-link"
               ><i class="ri-facebook-circle-line"></i
             ></a>
 
             <a
-              href="https://www.instagram.com"
+              href="https://www.instagram.com/"
               target="_blank"
               class="nav__social-link"
               ><i class="ri-instagram-line"></i
             ></a>
 
             <a
-              href="https://www.twitter.com"
+              href="https://twitter.com/"
               target="_blank"
               class="nav__social-link"
               ><i class="ri-twitter-x-line"></i
@@ -91,7 +93,96 @@
     <!--==================== MAIN ====================-->
     <main class="main">
       <!--==================== HOME ====================-->
-      <section class="home"></section>
+      <section class="home">
+        <div class="home__container container">
+          <div class="home__data">
+            <div class="home__content">
+              <div class="home__stars">
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-half-fill"></i>
+              </div>
+
+              <div class="home__product-info">
+                <span class="home__product-ref">IW505701</span>
+
+                <h1 class="home__product-title">
+                  Baume Custom <br />
+                  Timepiece Small <br />
+                  Second
+                </h1>
+
+                <div class="home__product-details">
+                  <p class="home__product-detail">
+                    Automatic winding, Diameter 44.4 mm
+                  </p>
+                  <p class="home__product-detail">White, Platinum Case</p>
+                </div>
+              </div>
+
+              <h3 class="home__price">$10999</h3>
+            </div>
+
+            <a href="#" class="home__button">
+              ADD TO CART
+              <i class="ri-arrow-right-s-line"></i>
+            </a>
+          </div>
+
+          <div class="home__images">
+            <div class="home__swiper swiper">
+              <div class="swiper-wrapper">
+                <article class="home__article swiper-slide">
+                  <img src="images/watch-1.png" alt="image" class="home__img" />
+                </article>
+
+                <article class="home__article swiper-slide">
+                  <img src="images/watch-2.png" alt="image" class="home__img" />
+                </article>
+
+                <article class="home__article swiper-slide">
+                  <img src="images/watch-3.png" alt="image" class="home__img" />
+                </article>
+
+                <article class="home__article swiper-slide">
+                  <img src="images/watch-4.png" alt="image" class="home__img" />
+                </article>
+
+                <article class="home__article swiper-slide">
+                  <img src="images/watch-5.png" alt="image" class="home__img" />
+                </article>
+
+                <article class="home__article swiper-slide">
+                  <img src="images/watch-6.png" alt="image" class="home__img" />
+                </article>
+              </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+
+          <div class="home__info">
+            <img
+              src="images/watches-border.png"
+              alt="image"
+              class="home__info-img"
+            />
+
+            <div class="home__info-content">
+              <p class="hone__info-description">
+                Personalized watches are masterpieces of quality and dedication.
+                Each piece is thoughtfully co-created with innovation and a
+                genuine responsibility towards the users' needs.
+              </p>
+
+              <a href="#" class="home__button-link">LEARN MORE</a>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   </body>
 </html>
